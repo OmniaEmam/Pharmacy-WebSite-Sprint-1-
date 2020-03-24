@@ -1,0 +1,74 @@
+.header 
+ {
+  /*box-sizing: 10px;*/
+  background-color:#ccedd2;
+  padding: 10px;
+  font: Serif;
+  text-align: center;
+  color: #000000;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #94d3ac;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #7fcd91;
+  color: black;
+}
+ body{
+background: #004445; /* fallback for old browsers */
+
+
+ }
+ #frm{
+ 	/*border: solid gray 1px;
+ 	width: 20%;
+ 	border-radius:5px;
+ 	margin:100px auto; 
+ 	background: white;
+ 	padding: 50px;*/
+  text-align: center;
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-bottom: 20px;
+ }
+
+ #btn{
+ 	/*color:#fff;
+ 	background: #337ab7;
+ 	padding:5px;
+ 	margin-left: 69%;
+ 	*/
+ 	font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #004445;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+input[type=btn]:hover;
+input[type=btn]:active;
+input[type=btn]:focus {
+  background: #4B0082;
+}
+ }
