@@ -1,0 +1,86 @@
+.header {
+  background-color:#ccedd2;
+  padding: 10px;
+  font: Serif;
+  text-align: center;
+  color: #000000;
+}
+  
+/*--------------------TopBar-----------------*/
+  /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #94d3ac;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #7fcd91;
+  color: black;
+}
+
+
+
+#frm{
+	
+	color:wheat;
+	text-align: center;
+	top: 0px;
+	height: 35%;
+	width: 100%;
+	 position:relative;
+  /*z-index: 2;*/
+  background: #94d3ac;
+  max-width: 360px;
+  margin: 50px auto 100px;
+  padding: 30px;
+  }
+    
+.textField{
+	margin-top: 2px;
+	height: 28px;
+	border: 1px solid #5E6E66;
+	font-size: 16px;
+	padding: 1px;
+	width: 100%;
+}
+//*#error_msg{
+	width: 50%;
+	margin: 5px auto;
+	height: 30px;
+	border: 1px solid #FF0000;
+	background: #FFB9B8;
+	color: #FF0000;
+	text-align: center;
+	padding-top: 10px;
+}*/
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+td{
+	text-align: right;
+  }
