@@ -268,7 +268,7 @@ input[type=submit]:focus {
  <!----------------TopBar----------------->
  <div class="topnav">
   <a href="#">Home</a>
-  <a href="#">Store</a>
+  <a href="Store.php">Store</a>
      <a href="#">Cart</a>
      <a href="Ask%20for%20Medical%20Advise.php">Ask Us</a>
      <a href="Feed%20back.php">Feedback</a>
