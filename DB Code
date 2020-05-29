@@ -1,0 +1,87 @@
+CREATE database pharmacy;
+use pharmacy;
+CREATE TABLE customerData (
+cdID int NOT NULL AUTO_INCREMENT,
+cname varchar(20),
+email varchar(30),
+password varchar(10),
+Constraint customerData_pk
+PRIMARY KEY(cdID)
+);
+CREATE TABLE customarAddress(
+cdID int,
+state varchar(10),
+street varchar(10),
+posta varchar(10),
+CONSTRAINT FOREIGN KEY(cdID)
+REFERENCES customerDate(cdID)
+);
+CREATE TABLE orders (
+oID int NOT NULL AUTO_INCREMENT,
+cdID int,
+CONSTRAINT oID_pk 
+PRIMARY KEY(oID) ,
+CONSTRAINT order_fk
+FOREIGN KEY(cdID)
+REFERENCES customerDate(cdID)
+);
+CREATE TABLE orderdetails(
+pname varchar(20),
+price float (10),
+pID int,
+CONSTRAINT orderdetails_fk
+FOREIGN KEY(pID)
+REFERENCES product(pID)
+);
+CREATE TABLE baill(
+baillID int NOT NULL AUTO_INCREMENT,
+cartnum int(10),
+email varchar(10),
+cname varchar(10),
+cdID int,
+constraint baill_pk
+PRIMARY KEY (baillID),
+CONSTRAINT bail_fk
+FOREIGN KEY(cdID)
+REFERENCES customerDate(cdID)
+);
+CREATE TABLE product(
+pID int NOT NULL AUTO_INCREMENT,
+pname varchar(10),
+company varchar(10),
+catID INT,
+constraint product_pk
+PRIMARY KEY (pID),
+CONSTRAINT product_fk
+FOREIGN KEY(catID)
+REFERENCES category(catID)
+);
+CREATE TABLE category (
+catID int NOT NULL AUTO_INCREMENT,
+catname varchar (10),
+CONSTRAINT category_pk
+PRIMARY KEY (catID)
+);
+CREAT TABLE message (
+mId int NOT NULL AUTO_INCREMENT,
+name varchar (10),
+email varchar (20),
+notes varchar (50),
+subject varchar (100),
+CONSTRAINT message_pk
+PRIMARYKEY (mID)
+);
+CREATE TABLE cart( 
+CartID int NOT NULL AUTO_INCREMENT,
+cdID int,
+pID int ,
+Date int (10),
+constraint cart_pk
+PRIMARY KEY (cartID),
+CONSTRAINT cart_fk
+FOREIGN KEY(cdID)
+REFERENCES customerDate(cdID)
+CONSTRAINT cart_fk
+FOREIGN KEY(pID)
+REFERENCES product(pID)
+);
